@@ -1,9 +1,10 @@
 import styled from 'styled-components'
 
 const Button = styled.button`
+  display: block;
+  width: 100%;
   padding: 1em 2.5em;
   border: none;
-  /* background-color: ${(props) => props.theme.colors.orange}; */
   background: linear-gradient(to bottom, ${(props) => props.theme.colors.orange}, ${(props) => props.theme.colors.yellowOrange});
   color: ${(props) => props.theme.colors.white};
   border-radius: 4px;
@@ -32,6 +33,11 @@ const Button = styled.button`
       transition: opacity .4s linear;
       opacity: 1;
     }
+  }
+
+  ${({ theme }) => theme.media.tablet} {
+    display: inline-block;
+    width: 100%;
   }
 `
 
@@ -66,7 +72,7 @@ const LinkButton = styled.a`
     background: linear-gradient(to top, ${(props) => props.theme.colors.orange}, ${(props) => props.theme.colors.yellowOrange});
     opacity: 0;
     z-index: 2;
-    line-height: 2.4;
+    line-height: 2.45;
     transition: opacity .4s linear;
   }
 

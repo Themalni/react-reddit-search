@@ -1,9 +1,9 @@
 import styled from 'styled-components'
 
 const Card = styled.div`
-  width: 32%;
+  width: 90%;
   height: auto;
-  margin: 0.5em;
+  margin: 0.5em auto;
   padding-bottom: 3em;
   background-color: ${(props) => props.theme.colors.white};
   border-radius: 4px;
@@ -15,12 +15,16 @@ const Card = styled.div`
   &:nth-child(3n+1) { order: 1; }
   &:nth-child(3n+2) { order: 2; }
   &:nth-child(3n)   { order: 3; }
+
+  ${({ theme }) => theme.media.laptop} {
+    width: 32%;
+    margin: 0.5em;
+  }
 `
 
 const CardHeader = styled.div`
   width: 100%;
   padding: 0.7em;
-  /* background-color: ${(props) => props.theme.colors.blue} */
   background: linear-gradient(to bottom, ${(props) => props.theme.colors.blue}, ${(props) => props.theme.colors.blueLight});
   text-align: center;
   color: ${(props) => props.theme.colors.white};
