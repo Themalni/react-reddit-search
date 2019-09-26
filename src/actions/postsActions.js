@@ -24,7 +24,7 @@ export const postsNotFoundChangeState = (changeState) => dispatch => {
 
 export const fetchPosts = () => (dispatch, getState) => {
   const { searchTerm } = getState().search
-  axios.get(`http://www.reddit.com/search.json?q=${searchTerm.search}&sort=new&limit=20&raw_json=1`)
+  axios.get(`https://www.reddit.com/search.json?q=${searchTerm.search}&sort=new&limit=20&raw_json=1`)
     .then(response => {
       const dataReceived = response.data.data.children
       if (dataReceived.length === 0) {
