@@ -30,7 +30,6 @@ class App extends Component {
 }
 
 const mapStateToProps = (state) => {
-  console.log("SearchTerm:", state.search.searchTerm)
   return {
     postsFound: state.posts.postsFound,
     postsNotFound: state.posts.postsNotFound,

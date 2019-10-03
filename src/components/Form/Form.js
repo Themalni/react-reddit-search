@@ -3,7 +3,7 @@ import styled from 'styled-components'
 const Form = styled.form`
   width: 90%;
 
-  ${({ theme }) => theme.media.tablet} {
+  ${(props) => props.theme.media.tablet} {
     width: auto;
   }
 `

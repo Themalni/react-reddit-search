@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App renders correctly 1`] = `
+<div
+  class="sc-bdVaJa EGqKq"
+>
+  <h1
+    class="sc-bwzfXH hpwBDX"
+  >
+    Search Reddit app
+  </h1>
+  <div
+    class="sc-htpNat kmuuwR"
+  >
+    <form
+      class="sc-EHOje enRHgQ"
+    >
+      <input
+        class="sc-bZQynM bUyRsv"
+        name="search"
+        placeholder="Enter search term..."
+        required=""
+        type="text"
+        value=""
+      />
+      <button
+        class="sc-gzVnrw cQXIoY"
+        type="submit"
+      >
+        Search
+      </button>
+    </form>
+  </div>
+</div>
+`;

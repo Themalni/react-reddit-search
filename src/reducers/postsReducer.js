@@ -1,13 +1,13 @@
 import { FETCH_POSTS, POSTS_FOUND_CHANGE_STATE, IS_LOADING_CHANGE_STATE, POSTS_NOT_FOUND_CHANGE_STATE } from '../actions/types';
 
-const initState = {
+export const initState = {
   postsFound: false,
   postsNotFound: false,
   isLoading: false,
   items: []
 }
 
-export default function (state = initState, action) {
+export function postsReducer(state = initState, action) {
   switch (action.type) {
     case FETCH_POSTS:
       return {

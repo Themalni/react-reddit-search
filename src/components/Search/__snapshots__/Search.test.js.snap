@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Search renders correctly 1`] = `
+<div
+  class="sc-bdVaJa bZcouC"
+>
+  <form
+    class="sc-bxivhb gkJYwJ"
+  >
+    <input
+      class="sc-ifAKCX gcaKdI"
+      name="search"
+      placeholder="Enter search term..."
+      required=""
+      type="text"
+      value=""
+    />
+    <button
+      class="sc-EHOje cxfMfx"
+      type="submit"
+    >
+      Search
+    </button>
+  </form>
+</div>
+`;
