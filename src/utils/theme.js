@@ -1,16 +1,12 @@
 import { colors } from './colors';
+import { media } from './media';
 
 export const theme = {
   colors,
+  media,
   font: {
     thin: 300,
     regular: 400,
     bold: 700,
-  },
-  media: {
-    phone: '@media (min-width: 320px)',
-    tablet: '@media (min-width: 728px)',
-    laptop: '@media (min-width: 1024px)',
-    desktop: '@media (min-width: 1280px)'
   }
 }

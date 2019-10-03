@@ -21,7 +21,7 @@ class Search extends Component {
     this.props.postsNotFoundChangeState(false);
   }
 
-  onSubmit = (e) => {
+  handleSubmit = (e) => {
     e.preventDefault();
 
     const searchTerm = {
@@ -35,9 +35,9 @@ class Search extends Component {
   render() {
     return (
       <Container>
-        <Form onSubmit={this.onSubmit}>
+        <Form onSubmit={this.handleSubmit}>
           <InputText type="text" placeholder="Enter search term..." name="search" onChange={this.onChange} value={this.state.search} required />
-          <Button>Search</Button>
+          <Button type="submit">Search</Button>
         </Form>
       </Container>
     )

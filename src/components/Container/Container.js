@@ -17,13 +17,12 @@ const MasonryContainer = styled.div`
   flex-flow: column;
   align-content: center;
 
-  ${({ theme }) => theme.media.laptop} {
+  ${(props) => props.theme.media.tablet} {
     width: 90%;
     flex-flow: column wrap;
     max-height: 4000px;
   }
-
-  ${({ theme }) => theme.media.desktop} {
+  ${(props) => props.theme.media.desktop} {
     width: 75%;
   }
 `

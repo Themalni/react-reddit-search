@@ -43,7 +43,7 @@ class Post extends Component {
               </CardText>
             </CardBody>
             <CardFooter>
-              <LinkButton isBlue href={`http://www.reddit.com${post.permalink}`} target="_blank">Read more</LinkButton>
+              <LinkButton isBlue href={`https://www.reddit.com${post.permalink}`} target="_blank">Read more</LinkButton>
             </CardFooter>
           </Card>
         )

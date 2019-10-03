@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Form renders correctly 1`] = `
+.c0 {
+  width: 90%;
+}
+
+@media (min-width:728px) {
+  .c0 {
+    width: auto;
+  }
+}
+
+<form
+  class="c0"
+/>
+`;
